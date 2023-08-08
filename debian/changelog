@@ -1,5 +1,74 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-tidwall-gjson (1.14.4-2) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Cyril Brulebois <cyril@debamax.com>  Mon, 13 Mar 2023 00:32:40 +0100
+
+golang-github-tidwall-gjson (1.14.4-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Security fixes (ReDoS – regular expression denial of service):
+     - CVE-2021-42248 (Closes: #1011616).
+     - CVE-2021-42836 (Closes: #1000225).
+
+ -- Cyril Brulebois <cyril@debamax.com>  Sun, 05 Mar 2023 01:34:13 +0100
+
+golang-github-tidwall-gjson (1.6.7-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 29 Nov 2022 17:37:01 +0000
+
+golang-github-tidwall-gjson (1.6.7-1) unstable; urgency=medium
+
+  * New upstream release 1.6.7
+  * Fix for:
+    - CVE-2020-36067
+    - CVE-2020-36066
+      at least v1.0.3 of golang-github-tidwall-match is required
+    - CVE-2020-35380 (Closes: #977622)
+  * Add myself as uploader
+  * debian/control: add missing Depends: golang-github-tidwall-pretty-dev
+  * debian/control: use dh13
+  * debian/control: bump standard to 4.5.1 (no changes)
+  * reverse dependencies successfully built with ratt:
+    - golang-github-tidwall-buntdb
+    - golang-github-tidwall-grect
+    - wuzz
+    - garagemq
+    - g10k
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sun, 10 Jan 2021 16:01:30 +0000
+
+golang-github-tidwall-gjson (1.1.5-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Sat, 09 Jan 2021 17:01:46 +0100
+
+golang-github-tidwall-gjson (1.1.5-2) unstable; urgency=medium
+
+  [ Guillem Jover ]
+  * [f49f361] Wrap dependency fields and add trailing comma
+  * [c4e4a53] Improve package description
+  * [b13877c] Add missing Depends on golang-github-tidwall-match-dev
+  * [c8a4480] Set Rules-Requires-Root to no
+  * [5e196d0] Add a .gitignore file
+
+ -- Michael Prokop <mika@debian.org>  Thu, 31 Jan 2019 08:55:23 +0100
+
+golang-github-tidwall-gjson (1.1.5-1) unstable; urgency=medium
+
+  [ Jack Henschel ]
+  * Initial release (Closes: #909144)
+
+  [ Michael Prokop ]
+  * [a66dd47] New upstream version 1.1.5
+  * [d31148d] Add myself as uploader
+  * [8ff87cc] Bump Standards-Version to 4.3.0
+  * [9cf6be7] Build-Depend on golang-github-tidwall-match-dev
+
+ -- Michael Prokop <mika@debian.org>  Tue, 22 Jan 2019 11:43:05 +0100
